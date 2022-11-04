@@ -13,6 +13,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
+alert("process.env.GOERLI_URL:" + process.env.GOERLI_URL);
+
 module.exports = {
   defaultNetwork: "hardhat",
   networks: {
@@ -21,7 +23,7 @@ module.exports = {
     },
     goerli: {
       url: process.env.GOERLI_URL,
-      accounts: [ACC_PRIVATE_KEY],
+      accounts: [process.env.ACC_PRIVATE_KEY],
     },
   },
   solidity: {

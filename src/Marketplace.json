@@ -1,5 +1,5 @@
 {
-  "address": "0x291CD2baD93dB999fad490163bA5FB083D2c3E14",
+  "address": "0xCee0D8334D53C4e9802c9C895EDC798659F67249",
   "abi": [
     { "type": "constructor", "payable": false, "inputs": [] },
     {
@@ -20,6 +20,18 @@
         { "type": "address", "name": "owner", "indexed": true },
         { "type": "address", "name": "operator", "indexed": true },
         { "type": "bool", "name": "approved", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "TokenListedSuccess",
+      "inputs": [
+        { "type": "uint256", "name": "tokenId", "indexed": true },
+        { "type": "address", "name": "owner", "indexed": false },
+        { "type": "address", "name": "seller", "indexed": false },
+        { "type": "uint256", "name": "price", "indexed": false },
+        { "type": "bool", "name": "currentlyListed", "indexed": false }
       ]
     },
     {
@@ -142,7 +154,7 @@
     },
     {
       "type": "function",
-      "name": "getListedForTokenId",
+      "name": "getListedTokenForId",
       "constant": true,
       "stateMutability": "view",
       "payable": false,

@@ -1,4 +1,8 @@
-require("dotenv").config();
+// alert("process.env.REACT_APP_PINATA_KEY::" + process.env.REACT_APP_PINATA_KEY);
+// alert(
+//   "process.env.REACT_APP_PINATA_SECRET:::" + process.env.REACT_APP_PINATA_SECRET
+// );
+
 const key = process.env.REACT_APP_PINATA_KEY;
 const secret = process.env.REACT_APP_PINATA_SECRET;
 

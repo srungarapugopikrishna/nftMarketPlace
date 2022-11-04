@@ -8,3 +8,6 @@ cd nftMarketPlace
 npm install
 npm start
 ```
+
+To run the contract:
+npx hardhat run --network goerli scripts/deploy.js
